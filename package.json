@@ -1,0 +1,50 @@
+{
+  "name": "canvas-bot",
+  "version": "1.0.0",
+  "description": "Monitor upcoming assignments from canvas and SAM via discord.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx eslint src *.js",
+    "init-db": "node ./scripts/initialize-database.js",
+    "init-config": "cp -i ./.config.example.json ./.config.json",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "contributors": [
+    {
+      "name": "Cammy",
+      "url": "https://github.com/CammyFentreux"
+    },
+    {
+      "name": "Tom",
+      "url": "https://github.com/Douile"
+    }
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/discord-canvas/Discord-Canvas-Bot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/discord-canvas/Discord-Canvas-Bot/issues"
+  },
+  "homepage": "https://github.com/discord-canvas/Discord-Canvas-Bot#readme",
+  "dependencies": {
+    "@douile/bot-utilities": "^1.3.1",
+    "discord.js-light": "^3.5.3",
+    "dotenv": "^8.2.0",
+    "node-fetch": "^2.6.1",
+    "node-html-parser": "^2.1.0",
+    "simple-git": "^2.35.0",
+    "sqlite3": "^5.0.1"
+  },
+  "optionalDependencies": {
+    "bufferutil": "^4.0.2",
+    "erlpack": "github:discord/erlpack",
+    "utf-8-validate": "^5.0.3",
+    "zlib-sync": "^0.1.7"
+  },
+  "devDependencies": {
+    "eslint": "^7.20.0"
+  }
+}
